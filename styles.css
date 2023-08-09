@@ -1,0 +1,309 @@
+/* Estilos del navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: purple;
+    color: #fff;
+    padding: 10px;
+    z-index: 999;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin-right: 10px;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  /* Estilos del fondo y logo de la página de inicio */
+.hero {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: relative;
+    width: 100%;
+    opacity: 70%;
+  }
+  
+  .background-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 3s ease;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hero:hover .background-image img {
+    opacity: 0;
+  }
+  
+  .hero:hover .logo {
+    opacity: 1;
+  }
+
+  /*--- --- --- HISTORIA --- --- ---*/
+
+  .section {
+    margin-top: 50px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .text {
+    flex: 1;
+    text-align: justify;
+  }
+  
+  .image {
+    flex-shrink: 0;
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    animation: fade 2s infinite;
+  }
+  
+  @keyframes fade {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  h2 {
+    color: blue;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+hr {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: blue;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 18px;
+		margin-top: 10px;
+	}
+
+	img {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	hr {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h2 {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	img {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	hr {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+/* --- --- --- PERSONAJES --- --- --- */
+img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card img {
+  width: 150px;
+  border-radius: 10px 0 0 10px;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+}
+
+@media screen and (max-width: 480px) {
+h2 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+img {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+}
+
+ /* Footer */
+
+  .footer {
+    text-align: center;
+    background-color: purple;
+}
+
+.creator {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 18px;
+		margin-top: 10px;
+	}
+
+	img {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	hr {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h2 {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	img {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	hr {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
